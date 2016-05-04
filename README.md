@@ -1,5 +1,5 @@
 # Rppn
-A R package to share data and reporting workflows at Public Prep.  [Inspired](https://medium.com/airbnb-engineering/using-r-packages-and-education-to-scale-data-science-at-airbnb-906faa58e12d#.pawy0ho6z) by the great folks at the Airbnv data science [team](https://medium.com/airbnb-engineering).
+A R package to share data and reporting workflows at Public Prep.  [Inspired](https://medium.com/airbnb-engineering/using-r-packages-and-education-to-scale-data-science-at-airbnb-906faa58e12d#.pawy0ho6z) by the great folks at the Airbnb data science [team](https://medium.com/airbnb-engineering).
 
 This repository will house:
 - functions to read data 
