@@ -4,7 +4,7 @@ Title: Functions For Public Prep Data Analysis And Reporting
 Version: 0.0.2
 Authors@R: c(
   person("Andrew", "Martin", role = c("aut","cre"), email = "amartin@publicprep.org"))
-Description: Common functions, themes and templates for PPN reporting and data analysis
+Description: A collection of common functions, themes and templates for PPN reporting and data analysis.
 License: GPL-3
 LazyData: TRUE
 RoxygenNote: 5.0.1
