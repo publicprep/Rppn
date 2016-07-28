@@ -16,12 +16,17 @@ ppn_names_to_codes <- function(name_vector) {
   clean <- list(
     "Pre Prep" = "JGCELP",
 
+    #MAP
     "Girls Prep Lower East Side Elementary School" = "GPLESE",
     "Girls Prep Bronx Elementary School" = "GPBXE",
     "Boys Prep Elementary School" = "BPBXE",
 
     "Girls Prep Lower East Side Middle School" = "GPLESM",
-    "Girls Prep Bronx Middle School" = "GPBXM"
+    "Girls Prep Bronx Middle School" = "GPBXM",
+
+    #NYSED
+    "GIRLS PREP CHARTER SCH-BRONX" = "GPBX",
+    "GIRLS PREP CHARTER SCHOOL" = "GPLES"
   )
 
   clean_name <- function(x) {
