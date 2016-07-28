@@ -26,6 +26,7 @@ ppn_names_to_codes <- function(name_vector) {
 
     #NYSED
     "GIRLS PREP CHARTER SCH-BRONX" = "GPBX",
+    "GIRLS PREP CHARTER-BRONX" = "GPBX",
     "GIRLS PREP CHARTER SCHOOL" = "GPLES"
   )
 
