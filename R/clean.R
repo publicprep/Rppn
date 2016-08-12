@@ -34,7 +34,7 @@ ppn_names_to_codes <- function(name_vector) {
     "GIRLS PREPARATORY CHARTER SCHOOL OF NEW YORK" = "GPLES"
   )
 
-  name_vector <- sapply(X = name_vector, FUN = clean_name)
+  name_vector <- sapply(X = name_vector, FUN = clean_name, clean = clean)
 
   return(unname(name_vector))
 }
@@ -46,7 +46,7 @@ ppn_names_to_codes <- function(name_vector) {
 #'
 #' @return character vector
 
-clean_name <- function(x) {
+clean_name <- function(x, clean) {
   z = clean[[x]]
   z = ifelse(is.null(z), x, z)
   return(z)
