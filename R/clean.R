@@ -27,16 +27,27 @@ ppn_names_to_codes <- function(name_vector) {
     #NYSED
     "GIRLS PREP CHARTER SCH-BRONX" = "GPBX",
     "GIRLS PREP CHARTER-BRONX" = "GPBX",
-    "GIRLS PREP CHARTER SCHOOL" = "GPLES"
-  )
+    "GIRLS PREP CHARTER SCHOOL" = "GPLES",
 
-  clean_name <- function(x) {
-    z = clean[[x]]
-    z = ifelse(is.null(z), x, z)
-    return(z)
-  }
+    #data.nysed.gove
+    "GIRLS PREPARATORY CHARTER SCHOOL OF THE BRONX" = "GPBX",
+    "GIRLS PREPARATORY CHARTER SCHOOL OF NEW YORK" = "GPLES"
+  )
 
   name_vector <- sapply(X = name_vector, FUN = clean_name)
 
   return(unname(name_vector))
+}
+
+
+#' Clean a name vector
+#'
+#' @param x character vector
+#'
+#' @return character vector
+
+clean_name <- function(x) {
+  z = clean[[x]]
+  z = ifelse(is.null(z), x, z)
+  return(z)
 }
