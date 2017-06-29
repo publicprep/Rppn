@@ -20,4 +20,3 @@ ex_sch <- c("Girls Prep Lower East Side Elementary School",
 "Girls Prep Bronx Elementary School", "Boys Prep Elementary School")
 ppn_names_to_codes(ex_sch)
 }
-

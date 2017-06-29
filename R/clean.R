@@ -59,3 +59,63 @@ clean_name <- function(x, clean) {
   z = ifelse(is.null(z), x, z)
   return(z)
 }
+
+
+#' PPN charter to school
+#'
+#' @description the state only understands our data as one school, but we have
+#' an ES campus and an MS campus.  turn the generic charter name into the
+#' school short code
+#' @param charter one of: GPBX, GPLES, BPBX
+#' @param grade one of: PK, K, 1, 2, 3, 4, 5, 6, 7, 8
+#'
+#' @return vector of school short codes
+#' @export
+
+ppn_charter_to_school <- function(charter, grade) {
+
+  #mash it together
+  hash <- paste0(charter, grade)
+
+  #data
+  clean <- list(
+    #GPLESE
+    "GPLESK" = "GPLESE",
+    "GPLES1" = "GPLESE",
+    "GPLES2" = "GPLESE",
+    "GPLES3" = "GPLESE",
+    "GPLES4" = "GPLESE",
+
+    #GPLESM
+    "GPLES5" = "GPLESM",
+    "GPLES6" = "GPLESM",
+    "GPLES7" = "GPLESM",
+    "GPLES8" = "GPLESM",
+
+    #GPBX
+    "GPBXPK" = "GPBXE",
+    "GPBXK" = "GPBXE",
+    "GPBX1" = "GPBXE",
+    "GPBX2" = "GPBXE",
+    "GPBX3" = "GPBXE",
+    "GPBX4" = "GPBXE",
+    "GPBX5" = "GPBXE",
+
+    #GPBXM
+    "GPBX6" = "GPBXM",
+    "GPBX7" = "GPBXM",
+    "GPBX8" = "GPBXM",
+
+    #BPBX
+    "BPBXPK" = "BPBXE",
+    "BPBXK" = "BPBXE",
+    "BPBX1" = "BPBXE",
+    "BPBX2" = "BPBXE",
+    "BPBX3" = "BPBXE",
+    "BPBX4" = "BPBXE"
+  )
+
+  sch_vector <- sapply(X = hash, FUN = clean_name, clean = clean)
+
+  return(unname(sch_vector))
+}

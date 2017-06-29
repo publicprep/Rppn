@@ -1,3 +1,9 @@
+# Rppn 0.0.4
+
+* `ppn_charter_to_school` function
+* added tests
+
+
 # Rppn 0.0.3
 
 * NYSED conversions

@@ -4,7 +4,7 @@
 \alias{clean_name}
 \title{Clean a name vector}
 \usage{
-clean_name(x)
+clean_name(x, clean)
 }
 \arguments{
 \item{x}{character vector}
@@ -15,4 +15,3 @@ character vector
 \description{
 Clean a name vector
 }
-
