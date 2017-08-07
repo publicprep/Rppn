@@ -28,6 +28,8 @@ ppn_names_to_codes <- function(name_vector) {
     "GIRLS PREP CHARTER SCH-BRONX" = "GPBX",
     "GIRLS PREP CHARTER-BRONX" = "GPBX",
     "GIRLS PREP CHARTER SCHOOL" = "GPLES",
+    "BOYS PREP CHARTER SCHOOL OF NY" = "BPBX",
+    "BOYS PREP CHARTER SCHOOL OF" = "BPBX",
 
     #data.nysed.gove
     "GIRLS PREPARATORY CHARTER SCHOOL OF THE BRONX" = "GPBX",
