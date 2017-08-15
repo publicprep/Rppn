@@ -31,7 +31,7 @@ ppn_names_to_codes <- function(name_vector) {
     "BOYS PREP CHARTER SCHOOL OF NY" = "BPBX",
     "BOYS PREP CHARTER SCHOOL OF" = "BPBX",
 
-    #data.nysed.gove
+    #data.nysed.gov
     "GIRLS PREPARATORY CHARTER SCHOOL OF THE BRONX" = "GPBX",
     "GIRLS PREPARATORY CHARTER SCHOOL OF NEW YORK" = "GPLES",
     "BOYS PREPARATORY CHARTER SCHOOL OF NEW YORK" = "BPBX",
@@ -42,7 +42,12 @@ ppn_names_to_codes <- function(name_vector) {
     "GIRLS PREPARATORY CHARTER SCHOOL OF THE BRONX- MIDDLE" = "GPBXM",
     "GIRLS PREPARATORY CHARTER SCHOOL OF NEW YORK - MIDDLE" = "GPLESM",
     "BOYS PREPARATORY CHARTER SCHOOL OF THE BRONX ELEMENTARY" = "BPBXE",
-    "PUBLIC PREPARATORY NETWORK INC- MANAGEMENT OFFICE" = "PPN"
+    "PUBLIC PREPARATORY NETWORK INC- MANAGEMENT OFFICE" = "PPN",
+
+    #steptool
+    'Boys Prep' = 'BPBXE',
+    'Girls Prep Bronx' = 'GPBXE',
+    'Girls Prep Lower East Side' = 'GPLESE'
   )
 
   name_vector <- sapply(X = name_vector, FUN = clean_name, clean = clean)
